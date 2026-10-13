@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sheikh Muhammad Shayan – Web Developer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#f4f1ea;--ink:#0f3b2e;--muted:#4d6a5f;--card:#fff;--line:#cfd8d1;--brass:#a8801f;--deep:#0f3b2e;--onDeep:#f4f1ea;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1f19;--ink:#eef2ec;--muted:#9bb5aa;--card:#10302a;--line:#21463d;--brass:#d6ac4a;--deep:#07140f;--onDeep:#eef2ec}}
+:root[data-theme="dark"]{--bg:#0a1f19;--ink:#eef2ec;--muted:#9bb5aa;--card:#10302a;--line:#21463d;--brass:#d6ac4a;--deep:#07140f;--onDeep:#eef2ec}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,Arial,sans-serif;line-height:1.65;font-size:1.05rem}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:600;margin:0;letter-spacing:-.015em}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+nav b{font-family:Fraunces,Georgia,serif;font-size:1.15rem}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;padding:36px 0 80px}
+.hero h1{font-size:clamp(2.6rem,7vw,5.2rem);line-height:1.02}
+.hero h1 span{display:inline-block;opacity:0;transform:translateY(24px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1 span:nth-child(2){animation-delay:.15s}.hero h1 span:nth-child(3){animation-delay:.3s}
+.hero p.lead{font-size:1.25rem;max-width:34ch;margin:22px 0 0;color:var(--muted);opacity:0;animation:up .8s .55s forwards}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;opacity:0;animation:up .8s .75s forwards}
+.tags span{border:1.5px solid var(--ink);border-radius:99px;padding:3px 14px;font-size:.92rem}
+@keyframes up{to{opacity:1;transform:none}}
+.arch{justify-self:center;width:min(100%,320px);aspect-ratio:3/4;border:3px solid var(--brass);border-radius:999px 999px 14px 14px;padding:12px;opacity:0;animation:up 1s .4s forwards}
+.arch div{height:100%;border-radius:999px 999px 6px 6px;background:var(--deep);color:var(--onDeep);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center}
+.arch .mono{font-family:Fraunces,Georgia,serif;font-size:4.2rem;line-height:1;letter-spacing:.02em}
+.arch small{color:var(--brass);font-size:1rem;max-width:12ch;line-height:1.35}
+
+section{padding:70px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:22px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.about p{margin:0 0 16px;max-width:60ch}
+.facts{display:grid;gap:12px;align-content:start}
+.facts div{background:var(--card);border:1px solid var(--line);border-radius:14px 14px 14px 4px;padding:14px 18px}
+.facts b{display:block;font-family:Fraunces,Georgia,serif;font-size:1.1rem}
+.facts span{color:var(--muted);font-size:.95rem}
+.path{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.path article{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--brass);border-radius:6px 6px 18px 18px;padding:24px}
+.path h3{font-size:1.3rem;margin-bottom:8px}.path p{margin:0;color:var(--muted)}
+.why{background:var(--deep);color:var(--onDeep);border-radius:22px;padding:clamp(28px,5vw,56px)}
+.why h2{max-width:20ch}.why p{max-width:62ch;margin:0 0 14px;opacity:.9}
+.why .brass{color:var(--brass)}
+footer{padding:40px 0 60px;color:var(--muted);border-top:1px solid var(--line)}
+@media (max-width:820px){.hero,.about{grid-template-columns:1fr}.path{grid-template-columns:1fr}.arch{order:-1;width:min(70%,240px)}nav a{margin-left:14px}}
+@media (prefers-reduced-motion:reduce){.hero h1 span,.hero p.lead,.tags,.arch{animation:none;opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main"><b>SMS</b><div><a href="#about">About</a><a href="#journey">Journey</a><a href="#why">Working together</a></div></nav>
+
+  <header class="hero">
+    <div>
+      <h1><span>Sheikh</span> <span>Muhammad</span> <span>Shayan</span></h1>
+      <p class="lead">A web developer from Karachi who builds websites with the same patience it takes to memorise the Quran.</p>
+      <div class="tags"><span>Web Developer</span><span>Hafiz-e-Quran</span><span>Karachi, Pakistan</span></div>
+    </div>
+    <div class="arch" aria-hidden="true"><div><span class="mono">SMS</span><small>Hafiz-e-Quran and web developer</small></div></div>
+  </header>
+
+  <section id="about">
+    <h2>About Shayan</h2>
+    <div class="about">
+      <div>
+        <p>Sheikh Muhammad Shayan is a web developer who lives in Baldia Town, Karachi. He learned the craft of building websites at The Catalyst Institute, and he studied in English right up to Matriculation at Dolphin Grammar School.</p>
+        <p>He is also a Hafiz-e-Quran, someone who has memorised the entire Quran. That takes years of daily revision, humility and focus, and those same habits show up in his work: he pays attention to small details, keeps going until a job is properly finished, and takes pride in doing it right.</p>
+      </div>
+      <div class="facts">
+        <div><b>Baldia Town, Karachi</b><span>Where Shayan lives and works</span></div>
+        <div><b>Hafiz-e-Quran</b><span>Memorised the Holy Quran</span></div>
+        <div><b>English-medium education</b><span>Dolphin Grammar School, up to Matric</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="journey">
+    <h2>The journey so far</h2>
+    <div class="path">
+      <article><h3>Memorised the Quran</h3><p>Completed hifz, a long road of daily revision that built his discipline, memory and patience.</p></article>
+      <article><h3>Dolphin Grammar School</h3><p>Studied entirely in English up to Matriculation, which makes him comfortable working and communicating in English.</p></article>
+      <article><h3>The Catalyst Institute</h3><p>Completed a web development course and turned his focus and curiosity into a profession.</p></article>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="why">
+      <h2>Why work with Shayan</h2>
+      <p>Someone who has held the Quran in his memory knows what it means to be careful, consistent and trustworthy. Shayan brings that mindset to every page he builds.</p>
+      <p>He is humble, hard-working and keen to keep learning, and he communicates clearly in English. If you want a developer who cares about the result as much as you do, <span class="brass">he is a good person to have on your side.</span></p>
+    </div>
+  </section>
+
+  <footer>Sheikh Muhammad Shayan, Baldia Town, Karachi, Pakistan</footer>
+</div>
+</body>
+</html>
